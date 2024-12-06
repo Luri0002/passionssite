@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo"><img class="fyldt_logo" src="img/fyldt_logo.svg" alt="Logo keramikkop på drejeskive.">
+            </div>
+            <div class="site-name">Passion for ler</div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="img/heroimage.webp" alt="Titel: Passion for ler.">
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player src="https://lottie.host/107ea0bb-639b-410f-a642-d6d36d02da89/ANoTjWu57w.lottie"
+                background="transparent" speed="1" autoplay>
+            </dotlottie-player>
+        </div>
+
+
+        <!-- Text Section -->
+        <div class="grid_1-1">
+            <section class="text-section">
+                <h2>PASSION FOR LER</h2>
+                <h3>Et interview med Laura Falcham</h3>
+                <p>Laura brænder for håndarbejde og keramik, hvor hun finder et kreativt frirum i en travl hverdag. For
+                    hende handler det
+                    ikke om at skabe den perfekte kop, men om at nyde processen og lære af de fejl, der opstår
+                    undervejs.
+                </p>
+            </section>
+
+            <!-- Image Section -->
+            <div class="image-section">
+                <!-- Billede 1 med tekst -->
+                <div class="image-with-text">
+                    <img src="img/nytimg.webp" alt="Beskrivelse af billede 1">
+                    <p class="tekst_billede">VÆRKSTED</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="marginh2">GALLERI</h2>
+        <!-- Billede 2 til 5 -->
+        <div class="image-grid">
+            <img src="img/d_img2.webp" alt="Billede 2">
+            <img src="img/d_img3.webp" alt="Billede 3">
+            <img src="img/portraert_laura.webp" alt="Billede 4">
+            <img src="img/d_img5.webp" alt="Billede 5">
+        </div>
+
+        <h2 class="marginh2">INTERVIEW</h2>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <!-- Video -->
+            <video class="video første" controls width="600">
+                <source src="faerdigt_interview_laura.mp4" type="video/mp4">
+                Din browser understøtter ikke videoafspilning.
+            </video>
+            <!-- YouTube Embed -->
+            <iframe class="video anden" width="600" src="https://www.youtube.com/embed/4rI243mE4ys?si=XTdg8TZ4GYIMc4EK"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <footer>
+            <img class="tomt_logo" src="img/tomt_logo.svg" alt="Keramikkop stregtegning">
+            <p class="blue">Passionssite lavet af Luna Ring</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.fyldt_logo {
+  width: 50px; /* Juster til den ønskede størrelse */
+  height: auto; /* Bevar proportionerne */
+}
+
+.hero {
+  position: relative; /* Reference for absolut positionering */
+  width: 100%; /* Fylder hele bredden */
+  height: auto; /* Automatisk højde baseret på billedets proportioner */
+  overflow: hidden; /* Skjuler alt udenfor containeren */
+  margin-bottom: 60px;
+}
+
+.hero img {
+  width: 100%; /* Fylder hele bredden */
+  height: auto; /* Bevarer billedets proportioner */
+  object-fit: cover; /* Sikrer korrekt skalering uden at strække */
+}
+
+.hero dotlottie-player {
+  position: absolute; /* Placeres i forhold til .hero */
+  bottom: 19%; /* Justerer afstand fra bunden */
+  left: 10%; /* Justerer afstand fra venstre */
+  transform: translate(0, 0); /* Fjern centreringsforskydning */
+  width: 82%; /* Juster størrelse af animationen */
+  height: auto; /* Bevar proportionerne */
+  z-index: 10; /* Sørger for, at animationen er foran billedet */
+}
+
+/* Grid for billeder - To kolonner på mobil */
+.image-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr); /* To kolonner på mobil */
+}
+
+.image-grid img {
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.image {
+  width: 100%; /* Sørg for, at billeder fylder hele grid-elementet */
+}
+
+.image img {
+  width: 100%; /* Billeder fylder deres container */
+  height: auto; /* Bevarer billedets aspect ratio */
+  display: block; /* Forhindrer billede i at have unødvendig margin */
+}
+
+.image-with-text img {
+  width: 100%; /* Gør billedet responsivt */
+  height: auto; /* Bevarer billedets aspect ratio */
+  display: block; /* Forhindrer unødvendig margin rundt om billedet */
+}
+
+.image-with-text {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto; /* Sørger for at containeren tilpasser sig billedets højde */
+}
+
+.tekst_billede {
+  position: absolute;
+  bottom: 15%;
+  left: 74%;
+  color: #fbd1c8;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+.video {
+  width: 100%;
+}
+
+iframe {
+  border: none;
+}
+
+.første,
+.anden {
+  aspect-ratio: 16 / 9; /* Bevar billedforholdet */
+  width: 100%; /* Skaler til skærmens bredde */
+  max-width: 600px; /* Begræns bredden til max 600px */
+  margin: 0 auto; /* Centrer elementerne */
+  border: none; /* Fjern iframe-rammer */
+}
+
+/* Footer sektion */
+footer {
+  text-align: left;
+}
+
+.tomt_logo {
+  width: 100px; /* Juster til den ønskede størrelse */
+  height: auto; /* Bevar proportionerne */
+  margin-top: 20px;
+}
+
+.blue {
+  font-family: "Poppins", sans-serif;
+  color: #263e9a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Media query for desktop */
+@media (min-width: 769px) {
+  .container {
+    margin: 0 auto;
+    padding: 10px 70px;
+  }
+
+  /* Header layout på desktop */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  /* Text sektion på desktop */
+  .tekst_billede {
+    font-size: 2rem;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .tekst_billede {
+    font-size: 1.5rem;
+    bottom: 15%;
+    left: 76%;
+  }
+
+  /* Billeder i image-grid - på desktop */
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 750px;
+  }
+
+  .image-grid :nth-child(1) {
+    grid-row: 1/3;
+  }
+
+  .image-grid :nth-child(2) {
+    grid-column: 2/4;
+  }
+
+  /* Video sektion på desktop */
+  .video-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  .første {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .anden {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  /* footer */
+  .tomt_logo {
+    width: 150px; /* Juster til den ønskede størrelse */
+    height: auto; /* Bevar proportionerne */
+    margin-top: 60px;
+  }
+}

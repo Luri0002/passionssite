@@ -1,0 +1,58 @@
+/*****Farver****
+#3772FF blå
+#F7F6F2 råhvid
+#272838 sort
+#5EA309 grøn
+
+fonte
+font-family: "Open Sans", system-ui;
+font-family: Helvetica, sans-serif; 
+***/
+
+h1 {
+  color: #272838;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #272838;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: #272838;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.marginh2 {
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #272838;
+}
+
+body {
+  background-color: #f7f6f2;
+  font-family: "Poppins", sans-serif;
+  color: #263e9a;
+}
+
+section {
+  margin-bottom: 20px; /* Skaber ens afstand mellem sektionerne */
+}
+
+.image-grid {
+  margin-top: 20px; /* Sikrer afstand mellem 'Galleri' overskriften og billedgalleriet */
+}
+
+.video-section {
+  margin-top: 20px; /* Sikrer afstand mellem 'Interview' og videoerne */
+}
